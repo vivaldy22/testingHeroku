@@ -19,7 +19,7 @@ func main() {
 	port := viper.ViperGetEnv("PORT", "8080")
 	r := mux.NewRouter()
 	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("Ga cair cair euy :D"))
+		w.Write([]byte("Semangat final project"))
 	})
 	r.HandleFunc("/cair", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Masih belum cair gan"))
